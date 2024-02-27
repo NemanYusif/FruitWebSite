@@ -1,0 +1,76 @@
+.header {
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  border: none;
+}
+.icon > select {
+  border: none;
+  opacity: 0.7;
+  outline: none;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input > input {
+  padding: 0.4rem;
+  border: none;
+  color: #999999;
+  opacity: 0.7;
+  background-color: #f7f7f7;
+  width: 16rem;
+  padding-left: 2rem;
+}
+.icon2 {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  margin-left: 0.5rem;
+}
+.right {
+  display: flex;
+  gap: 10.5rem;
+}
+.connect {
+  display: flex;
+  gap: 0.5rem;
+}
+.firstLine {
+  border: 1px solid #2a2a2a33;
+  height: 1.2rem;
+  margin: 0 0.7rem;
+}
+.icons {
+  position: relative;
+}
+.hearth {
+  font-size: 1.5rem;
+}
+.number > p {
+  background-color: rgb(11, 163, 11);
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  z-index: 45;
+  right: 0;
+  top: 0;
+}
+.select > select {
+  border: none;
+}
