@@ -1,28 +1,16 @@
-.header {
-  margin-top: 1.3rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  gap: 3rem;
-}
 .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0.5;
   border: none;
 }
+
 .icon > select {
   border: none;
   opacity: 0.7;
   outline: none;
 }
 .input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  width: 35%;
 }
 .input > input {
   padding: 0.4rem;
@@ -30,8 +18,8 @@
   color: #999999;
   opacity: 0.7;
   background-color: #f7f7f7;
-  width: 16rem;
   padding-left: 2rem;
+  width: 100%;
 }
 .icon2 {
   opacity: 0.5;
@@ -40,13 +28,11 @@
   left: 0;
   margin-left: 0.5rem;
 }
-.right {
-  display: flex;
-  gap: 10.5rem;
-}
+
 .connect {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.7rem;
 }
 .firstLine {
   border: 1px solid #2a2a2a33;
@@ -62,14 +48,16 @@
 .number > p {
   background-color: rgb(11, 163, 11);
   border-radius: 50%;
+  border: 1px solid white;
   width: 11px;
   height: 11px;
-  font-size: 10px;
+  font-size: 8px;
   color: white;
   position: absolute;
   z-index: 45;
   right: 0;
   top: 0;
+  text-align: center;
 }
 .select > select {
   border: none;

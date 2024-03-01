@@ -1,0 +1,28 @@
+.input {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+.input > input {
+  padding: 0.4rem;
+  border: none;
+  color: #999999;
+  opacity: 0.7;
+  background-color: #f7f7f7;
+  padding-left: 2rem;
+  width: 100%;
+}
+.icon2 {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  margin-left: 0.5rem;
+}
+.searchBar {
+  position: fixed;
+  inset: 0;
+}
+.icon {
+  font-size: 1.5rem;
+}

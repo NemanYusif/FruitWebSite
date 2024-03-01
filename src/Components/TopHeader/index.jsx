@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa6";
 const TopHeader = () => {
   return (
     <>
-      <div>
+      <div className="d-none d-md-block ">
         <div className={`${style.header}`}>
           <div className={`${style.headerChild}`}>
             <CiMail className={`${style.mail}`} />
