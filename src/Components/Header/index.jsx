@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../../public/HeaderLogo/Logo.png";
 import style from "../Header/Header.module.css";
 import { CiLocationOn } from "react-icons/ci";
@@ -11,15 +11,16 @@ import { FaBars } from "react-icons/fa";
 import SideBar from "../SideBar";
 
 const Header = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   return (
     <>
       <div className="container py-3">
         <div className="row align-items-center justify-content-between ">
           <div className="col-8 col-lg-3">
             <div className="d-flex align-items-center justify-content-between">
-              <div>
+              <div className={`${style.logo}`}>
                 <Link to="/">
-                  <img src={Logo} alt="Logo" className={style.logo} />
+                  <img src={Logo} alt="Logo" />
                 </Link>
               </div>
               <div className={`${style.icon} d-none d-md-block`}>
@@ -70,11 +71,18 @@ const Header = () => {
           </div>
 
           {/* mobile bars */}
-          <div className="col-1  d-block d-md-none">
-            <FaBars />
+          <div
+            className={`d-block d-md-none col-1 ${
+              showMobileMenu ? "d-none" : "d-block"
+            }`}
+          >
+            <FaBars onClick={() => setShowMobileMenu(!showMobileMenu)} />
           </div>
           <div>
-            <SideBar />
+            <SideBar
+              setShowMobileMenu={setShowMobileMenu}
+              showMobileMenu={showMobileMenu}
+            />
           </div>
         </div>
       </div>

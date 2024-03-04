@@ -1,0 +1,41 @@
+.all {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.border {
+  border-top: 1px solid #999999;
+  width: 100%;
+}
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+.icon {
+  font-size: 0.9rem;
+}
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+.card {
+  background-color: #7fad39;
+  border: none;
+  width: 7.8rem;
+  height: 3.2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.car {
+  font-size: 1.5rem;
+}
+.select {
+  background-color: #7fad39;
+  border: none;
+  color: white;
+}

@@ -1,0 +1,47 @@
+.border {
+  border-top: 1px solid #999999;
+  width: 100%;
+  margin-top: 0.7rem;
+}
+.Img > img {
+  width: 100%;
+}
+.gap {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+.backg {
+  background-color: white;
+  width: 12rem;
+  height: 4.8rem;
+  position: absolute;
+  margin-top: 15px;
+  z-index: 1;
+  top: 0;
+  padding: 12px 8px;
+}
+.Img {
+  border: 5px solid white;
+  position: relative;
+}
+.backg > h6 {
+  color: #7fad39;
+  font-size: 12px;
+}
+.backg > h5 {
+  font-weight: 800;
+}
+.btn {
+  position: absolute;
+  z-index: 1;
+  right: 8px;
+  bottom: 15px;
+}
+.btnBack {
+  background-color: #7fad39;
+  padding: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
