@@ -8,61 +8,63 @@ import Img5 from "/SwiperImages/SwiperImg5.svg";
 const ProductSwiper = () => {
   return (
     <>
-      <div className={style.border}></div>
-      <div className={`${style.gap} mt-3`}>
-        <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
-          <img src={Img1} alt="" />
-          <div className={style.backg}>
-            <h6>6% OFF</h6>
-            <h5>Buy More & Save More</h5>
-            <p>Beverage</p>
+      <div className={`${style.border} d-none d-md-block`}></div>
+      <div className="d-none d-md-block ">
+        <div className={`${style.gap} mt-3 `}>
+          <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
+            <img src={Img1} alt="" />
+            <div className={style.backg}>
+              <h6>6% OFF</h6>
+              <h5>Buy More & Save More</h5>
+              <p>Beverage</p>
+            </div>
+            <div className={style.btn}>
+              <button className={style.btnBack}>SHOP NOW</button>
+            </div>
           </div>
-          <div className={style.btn}>
-            <button className={style.btnBack}>SHOP NOW</button>
+          <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
+            <img src={Img2} alt="" />
+            <div className={style.backg}>
+              <h6>10% OFF</h6>
+              <h5>Buy More & Save More</h5>
+              <p>Nuts & Snacks</p>
+            </div>
+            <div className={style.btn}>
+              <button className={style.btnBack}>SHOP NOW</button>
+            </div>
           </div>
-        </div>
-        <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
-          <img src={Img2} alt="" />
-          <div className={style.backg}>
-            <h6>10% OFF</h6>
-            <h5>Buy More & Save More</h5>
-            <p>Nuts & Snacks</p>
+          <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
+            <img src={Img3} alt="" />
+            <div className={style.backg}>
+              <h6>6% OFF</h6>
+              <h5>Buy More & Save More</h5>
+              <p>Fresh Vegetables</p>
+            </div>
+            <div className={style.btn}>
+              <button className={style.btnBack}>SHOP NOW</button>
+            </div>
           </div>
-          <div className={style.btn}>
-            <button className={style.btnBack}>SHOP NOW</button>
+          <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
+            <img src={Img4} alt="" />
+            <div className={style.backg}>
+              <h6>25% OFF</h6>
+              <h5>Buy More & Save More</h5>
+              <p>Fresh Fruits</p>
+            </div>
+            <div className={style.btn}>
+              <button className={style.btnBack}>SHOP NOW</button>
+            </div>
           </div>
-        </div>
-        <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
-          <img src={Img3} alt="" />
-          <div className={style.backg}>
-            <h6>6% OFF</h6>
-            <h5>Buy More & Save More</h5>
-            <p>Fresh Vegetables</p>
-          </div>
-          <div className={style.btn}>
-            <button className={style.btnBack}>SHOP NOW</button>
-          </div>
-        </div>
-        <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
-          <img src={Img4} alt="" />
-          <div className={style.backg}>
-            <h6>25% OFF</h6>
-            <h5>Buy More & Save More</h5>
-            <p>Fresh Fruits</p>
-          </div>
-          <div className={style.btn}>
-            <button className={style.btnBack}>SHOP NOW</button>
-          </div>
-        </div>
-        <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
-          <img src={Img5} alt="" />
-          <div className={style.backg}>
-            <h6>15% OFF</h6>
-            <h5>Buy More & Save More</h5>
-            <p>Eggs & Dairy</p>
-          </div>
-          <div className={style.btn}>
-            <button className={style.btnBack}>SHOP NOW</button>
+          <div className={`${style.Img} shadow mb-5 bg-body rounded`}>
+            <img src={Img5} alt="" />
+            <div className={style.backg}>
+              <h6>15% OFF</h6>
+              <h5>Buy More & Save More</h5>
+              <p>Eggs & Dairy</p>
+            </div>
+            <div className={style.btn}>
+              <button className={style.btnBack}>SHOP NOW</button>
+            </div>
           </div>
         </div>
       </div>
