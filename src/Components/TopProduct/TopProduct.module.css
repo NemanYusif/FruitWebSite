@@ -1,0 +1,11 @@
+.htag > h3 {
+  font-weight: 800;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+.htag > h5 {
+  font-weight: 800;
+  color: #7fad39;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}

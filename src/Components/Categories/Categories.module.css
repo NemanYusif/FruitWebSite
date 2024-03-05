@@ -1,0 +1,19 @@
+.shop {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.shop > h5 {
+  font-weight: 800;
+  color: #7fad39;
+}
+.shop h2 {
+  font-weight: 800;
+  opacity: 0.8;
+}
+:root {
+  --swiper-theme-color: #7fad39;
+  user-select: none;
+}
+:root {
+  --swiper-navigation-size: 30px !important;
+}
