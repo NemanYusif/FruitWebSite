@@ -24,12 +24,9 @@ const Categories = () => {
             breakpoints={{
               0: {
                 slidesPerView: 2,
-                spaceBetween: 20,
-                centeredSlides: true,
               },
               368: {
                 slidesPerView: 2,
-                spaceBetween: 20,
               },
               576: {
                 slidesPerView: 3,
@@ -48,7 +45,6 @@ const Categories = () => {
                 spaceBetween: 30,
               },
             }}
-            spaceBetween={10}
             navigation={true}
             modules={[Navigation]}
             className={style.mySwiper}
