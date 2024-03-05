@@ -21,7 +21,7 @@ const SideBar = ({ setShowMobileMenu, showMobileMenu }) => {
               : `${style.searchBar} ${style.hideSearchBar}`
           }`}
         >
-          <div className="d-flex w-100 d-md-none justify-content-end align-items-center px-2 pt-3">
+          <div className="d-flex w-100 d-md-none justify-content-between align-items-center px-2 pt-3">
             <div className={`${style.logo}`}>
               <Link to="/">
                 <img src={Logo} alt="Logo" />
