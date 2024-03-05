@@ -8,6 +8,7 @@ import { FaRegUser } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import Footer from "../Footer";
 import SideBarCart from "../SideBarCart";
+import Logo from "/HeaderLogo/Logo.png";
 
 const SideBar = ({ setShowMobileMenu, showMobileMenu }) => {
   return (
@@ -21,14 +22,17 @@ const SideBar = ({ setShowMobileMenu, showMobileMenu }) => {
           }`}
         >
           <div className="d-flex w-100 d-md-none justify-content-end align-items-center px-2 pt-3">
-            <div className=" d-flex d-md-none align-content-center ">
-              <div className={`${style.icons}`}>
-                <CiHeart className={`${style.hearth}`} />
-                <div>
-                  <span className={`${style.number}`}>
-                    <p className="position-relative">3</p>
-                  </span>
-                </div>
+            <div className={`${style.logo}`}>
+              <Link to="/">
+                <img src={Logo} alt="Logo" />
+              </Link>
+            </div>
+            <div className={`${style.icons} d-flex`}>
+              <CiHeart className={`${style.hearth}`} />
+              <div>
+                <span className={`${style.number}`}>
+                  <p className="position-relative">3</p>
+                </span>
               </div>
               <IoClose
                 onClick={() => {
