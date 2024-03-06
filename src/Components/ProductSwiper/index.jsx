@@ -14,7 +14,7 @@ import "swiper/css/bundle";
 const ProductSwiper = () => {
   return (
     <>
-      <div className={`${style.border} d-none d-md-block`}></div>
+      <div className={`${style.border} d-none d-md-block `}></div>
       <div className=" ">
         <div className={`${style.gap} mt-3 `}>
           <Swiper
@@ -36,10 +36,10 @@ const ProductSwiper = () => {
                 spaceBetween: 40,
               },
             }}
-            spaceBetween={20}
+            spaceBetween={10}
             freeMode={true}
             autoplay={{
-              delay: 2500,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             loop={true}
@@ -48,7 +48,7 @@ const ProductSwiper = () => {
           >
             <SwiperSlide>
               <div className={`${style.Img} `}>
-                <img src={Img3} alt="" />
+                <img src={Img1} alt="" />
                 <div className={style.backg}>
                   <h6>6% OFF</h6>
                   <h5>Buy More & Save More</h5>
@@ -61,7 +61,7 @@ const ProductSwiper = () => {
             </SwiperSlide>
             <SwiperSlide sx={{ height: "0px" }}>
               <div className={`${style.Img}`}>
-                <img src={Img4} alt="" />
+                <img src={Img2} alt="" />
                 <div className={style.backg}>
                   <h6>10% OFF</h6>
                   <h5>Buy More & Save More</h5>
@@ -100,7 +100,7 @@ const ProductSwiper = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className={`${style.Img}`}>
-                <img src={Img3} alt="" />
+                <img src={Img5} alt="" />
                 <div className={style.backg}>
                   <h6>15% OFF</h6>
                   <h5>Buy More & Save More</h5>

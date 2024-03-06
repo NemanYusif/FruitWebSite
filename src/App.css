@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+  font-family: "Rubik", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 }
 
 * {
@@ -10,9 +10,13 @@
   outline: none;
   text-decoration: none;
   list-style: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img {
+  width: 100%;
 }

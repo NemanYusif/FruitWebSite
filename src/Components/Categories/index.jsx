@@ -8,7 +8,7 @@ import cat4 from "/Categories/cat4.svg";
 import cat5 from "/Categories/cat5.svg";
 import cat6 from "/Categories/cat6.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 const Categories = () => {
@@ -19,35 +19,42 @@ const Categories = () => {
           <h5>Shop By</h5>
           <h2>Categories</h2>
         </div>
-        <div className="d-flex gap-3">
+        <div className="d-flex">
           <Swiper
             breakpoints={{
               0: {
                 slidesPerView: 2,
+                navigation: false,
               },
               368: {
                 slidesPerView: 2,
+                navigation: false,
               },
               576: {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                navigation: false,
               },
               768: {
                 slidesPerView: 4,
-                spaceBetween: 30,
+                navigation: false,
               },
               992: {
                 slidesPerView: 5,
-                spaceBetween: 30,
+                navigation: true,
               },
               1020: {
                 slidesPerView: 6,
-                spaceBetween: 30,
+                navigation: true,
               },
             }}
-            navigation={true}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay, FreeMode]}
             className={style.mySwiper}
+            freeMode={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
           >
             <SwiperSlide>
               <Link to="#">
