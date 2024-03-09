@@ -5,6 +5,7 @@ import BottomHeader from "../../Components/BottomHeader";
 import ProductSwiper from "../../Components/ProductSwiper";
 import Categories from "../../Components/Categories";
 import TopProduct from "../../Components/TopProduct";
+import BestValue from "../../Components/BestValues";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <ProductSwiper />
       <Categories />
       <TopProduct />
+      <BestValue />
     </>
   );
 };
