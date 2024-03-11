@@ -1,3 +1,82 @@
 .images > img {
   width: 100%;
 }
+.images {
+  position: relative;
+}
+.header {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.header > h5 {
+  font-weight: 800;
+  color: #7fad39;
+}
+.header > h2 {
+  font-weight: 800;
+  opacity: 0.8;
+}
+.absalute {
+  position: absolute;
+  z-index: 33;
+  left: 0.9rem;
+  top: 2.3rem;
+}
+.absalute > p {
+  font-size: 25px;
+}
+.absalute > h2 {
+  font-size: 35px;
+  font-weight: 800;
+}
+.absalute > button {
+  background-color: #2a2a2a;
+  padding: 0.9rem;
+  border: none;
+  color: white;
+  margin-top: 6rem;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 368px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 568px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .absalute > h2 {
+    font-size: 20px;
+  }
+  .absalute > p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  .absalute > button {
+    margin-top: 1rem;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .absalute > button {
+    margin-top: 5rem;
+  }
+  .absalute > h2 {
+    font-size: 25px;
+  }
+  .absalute > p {
+    font-size: 15px;
+  }
+}

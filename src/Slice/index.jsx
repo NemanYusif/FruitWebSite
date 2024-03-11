@@ -1,20 +1,28 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  value: 0,
-};
 export const counterSlice = createSlice({
   name: "counter",
-  initialState,
+  initialState: [],
   reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
-    decrement: (state) => {
-      if (state.value !== 0) {
-        state.value -= 1;
+    increment: (state, action) => {
+      const exitingProduct = state.find(({ id }) => id === action.payload.id);
+      if (exitingProduct) {
+        exitingProduct.count++;
       } else {
-        alert("Qadan Alim Almirsan Alma");
+        const newObj = {
+          ...action.payload,
+          count: 1,
+        };
+
+        state.push(newObj);
+      }
+    },
+    decrement: (state, action) => {
+      const minusProduct = state.find(({ id }) => action.payload.id);
+      if (minusProduct.count > 0) {
+        minusProduct.count--;
+      } else {
+        minusProduct.count = 0;
       }
     },
   },

@@ -1,0 +1,76 @@
+.htag > h3 {
+  font-weight: 800;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+.htag > h5 {
+  font-weight: 800;
+  color: #7fad39;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+.border {
+  border: 1px solid #e6e6e6;
+}
+
+.topLine > p {
+  background-color: #7fad39;
+  font-weight: 600;
+  color: white;
+  font-size: 12px;
+}
+.hearth {
+  font-size: 25px;
+  color: #7fad39;
+  background-color: #d8e6c3;
+  border-radius: 50%;
+}
+.centerLine > p {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.centerLine {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+.h5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  color: #7fad39;
+}
+.h5 h5:last-child {
+  opacity: 0.2rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+.border > img {
+  width: 100%;
+}
+.btn > button {
+  background-color: #2a2a2a;
+  padding: 2px 6px;
+  color: white;
+  display: flex;
+  border: none;
+  width: 18px;
+  height: 18px;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(100%);
+}
+.btn {
+  display: flex;
+  gap: 5px;
+}
+.car {
+  font-size: 25px;
+  opacity: 0.5;
+}
+.btn > p > span {
+  font-weight: 600;
+}

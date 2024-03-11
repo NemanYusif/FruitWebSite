@@ -23,9 +23,31 @@ const TopProduct = () => {
       });
   }, []);
 
-  const count = useSelector((state) => state.counter.value);
-  console.log(count);
+  const stateProducts = useSelector((state) => state.counter);
   const dispathc = useDispatch();
+
+  const addToCartHandler = (prodId) => {
+    const clickedProduct = Product.find(({ id }) => prodId === id);
+    clickedProduct.count ? clickedProduct.count++ : (clickedProduct.count = 1);
+    setProduct((prev) => [...prev]);
+
+    dispathc(increment(clickedProduct));
+  };
+
+  const decreaseCartProductHandler = (prodId) => {
+    const minusProduct = Product.find(({ id }) => prodId === id);
+    if (minusProduct.count && minusProduct.count > 0) {
+      minusProduct.count--;
+    } else {
+      minusProduct.count = 0;
+    }
+    setProduct((prev) => [...prev]);
+
+    dispathc(decrement(minusProduct));
+  };
+
+  console.log(stateProducts);
+
   return (
     <>
       <div className="container ">
@@ -59,11 +81,13 @@ const TopProduct = () => {
             autoplay={{
               delay: 2000,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+              // reverseDirection: true,
             }}
             loop={true}
           >
             {Product.length &&
-              Product.map(({ id, image, title, price, discount }) => {
+              Product.map(({ id, image, title, price, discount, count }) => {
                 return (
                   <SwiperSlide key={id}>
                     <div className={style.border}>
@@ -88,11 +112,13 @@ const TopProduct = () => {
                         <div
                           className={`${style.btn} d-flex justify-content-center `}
                         >
-                          <button onClick={() => dispathc(decrement())}>
+                          <button
+                            onClick={() => decreaseCartProductHandler(id)}
+                          >
                             -
                           </button>
-                          <p>{count}</p>
-                          <button onClick={() => dispathc(increment())}>
+                          <p>{count || 0}</p>
+                          <button onClick={() => addToCartHandler(id)}>
                             +
                           </button>
                         </div>

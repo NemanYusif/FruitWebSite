@@ -1,0 +1,26 @@
+.banner > h2 {
+  color: white;
+}
+.banner {
+  background-image: url("/Banner/Banner.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+}
+.banner > h3 {
+  border: 3px dashed white;
+  color: white;
+  background-color: #7fad39b2;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.3rem 2rem;
+}

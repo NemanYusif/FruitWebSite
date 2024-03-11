@@ -6,6 +6,9 @@ import ProductSwiper from "../../Components/ProductSwiper";
 import Categories from "../../Components/Categories";
 import TopProduct from "../../Components/TopProduct";
 import BestValue from "../../Components/BestValues";
+import Banner from "../../Components/Banner";
+import AddedNewProduct from "../../Components/AddedNewProduct";
+import Products from "../../Components/Products";
 
 const Home = () => {
   return (
@@ -17,6 +20,9 @@ const Home = () => {
       <Categories />
       <TopProduct />
       <BestValue />
+      <Banner />
+      <AddedNewProduct />
+      <Products />
     </>
   );
 };
