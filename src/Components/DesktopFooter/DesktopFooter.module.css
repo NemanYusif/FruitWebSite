@@ -1,0 +1,135 @@
+.headerDiv {
+  display: flex;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+.desktopFooter {
+  background-color: #191919;
+  margin-top: 8rem;
+  padding: 1rem 0;
+}
+.siteLogo > img {
+  width: 40%;
+}
+.siteLogo > p {
+  color: #fff;
+  font-size: 12px;
+}
+.siteLogo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #fff;
+}
+.links > a {
+  font-size: 14px;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.link > a {
+  color: #fff;
+  font-size: 14px;
+}
+.footer > h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.footerLogos {
+  display: flex;
+  gap: 0.4rem;
+}
+.footerLogos > img {
+  width: 50%;
+}
+.input > h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.inbtn > input {
+  padding: 0.9rem;
+  width: 65%;
+}
+.inbtn > button {
+  background-color: #7fad39;
+  padding: 1rem;
+  border: none;
+  color: #fff;
+  width: 35%;
+  cursor: pointer;
+  margin-left: -01px;
+}
+.method > h2 {
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.payments {
+  display: flex;
+  gap: 0.3rem;
+}
+.payments > img {
+  width: 10%;
+}
+.end > p {
+  font-size: 12px;
+  color: #fff;
+}
+.end {
+  margin-top: 5rem;
+}
+.linksFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.firstLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 768) {
+  .headerDiv {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .siteLogo {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 568) {
+  .headerDiv {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 0) {
+  .headerDiv {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .siteLogo {
+    display: flex;
+    justify-content: start;
+  }
+}

@@ -9,6 +9,7 @@ import BestValue from "../../Components/BestValues";
 import Banner from "../../Components/Banner";
 import AddedNewProduct from "../../Components/AddedNewProduct";
 import Products from "../../Components/Products";
+import DesktopFooter from "../../Components/DesktopFooter";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Banner />
       <AddedNewProduct />
       <Products />
+      <DesktopFooter />
     </>
   );
 };
